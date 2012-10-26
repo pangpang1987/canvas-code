@@ -1,0 +1,23 @@
+{
+"nodes":{
+
+<% @project_ideas.each do |p_idea| %>
+   "<%= p_idea.id %>":{
+      "id": <%= p_idea.id %>,
+      "topic": "<%= p_idea.title %>",
+      "detail": "<%= p_idea.detail %>",
+      "user": "<%= p_idea.user_id %>"
+   }<% if p_idea != @project_ideas.last() && @project_ideas.last() != @project_ideas.first()%><%=","%><% end %>
+<% end %>
+},
+"edges":{
+<% @project_ideas.each do |p_idea| %>
+	"<%= p_idea.id %>":{
+		<% @target = @project_ideas.where("ancestor = ?", p_idea[:id])%>
+		<% @target.each do |t| %>
+	  "<%= t.id %>":{}<% if t != @target.last() && @target.last() != @target.first()%><%=","%><% end %>
+		<% end %>
+	}<% if p_idea != @project_ideas.last() && @project_ideas.last()!= @project_ideas.first()%><%=","%><% end %>
+<% end %>
+}
+}

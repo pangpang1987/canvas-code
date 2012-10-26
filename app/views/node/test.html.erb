@@ -1,0 +1,59 @@
+<body>
+	<section id="login">
+		<div id="nav">
+			<div id="logo">
+				<a href="index.html">CoConceptualize</a>
+			</div>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li class="sepa">
+					·
+				</li>
+				<li>
+					<a href="#about" onClick="smoothScroll('about','fast')">About</a>
+				</li>
+				<li class="sepa">
+					·
+				</li>
+				<li>
+					<a href="#contact" onClick="smoothScroll('contact','fast')">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div id="canvas">
+			<canvas id="viewport" width="800" height="600"></canvas>
+		</div>
+		<div id="node">
+		<p>
+		<form id="update">
+			<input type="text" id="node_id" name="id" value = "<%= @n_id %>" />
+			<input type="text" id="node_title" name="title"  />
+			<input type="text" id="node_detail" name="detail"  />
+		</form>
+		<button id = "button_update">update</button>
+		</p>
+		
+		<p>
+		<form id="create">
+			project_id:<input type="text" id="new_node_pid" name="project_id" value="<%= params[:id]%>" />
+			user_id:<input type="text" id="new_node_uid" name="user_id"  />
+			ancestor:<input type="text" id="ancestor" name="ancestor"/>
+			
+			title:<input type="text" id="new_node_title" name="title"  />
+			detail:<input type="text" id="new_node_detail" name="detail"  />
+			
+		</form>
+		<button id = "button_update">update</button>
+		</p>
+		
+		</div>
+	</section>
+	<div id="copyright-bar">
+		<span id="copyright-text"></span>
+		<img src="images/copyright.png" />
+	</div>
+
+</body>
+</html>

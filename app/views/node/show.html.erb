@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<% @project_ideas.each do |p_idea| %>
+<p>
+  <b>ID:</b>
+  <%= p_idea.id %>
+  <b>Title:</b>
+  <%= p_idea.title %>
+  <b>Ancestor:</b>
+  <%= p_idea.ancestor %>
+</p>
+
+<% end %>
+
+
+<p>
+  <b>Title:</b>
+  <%= @project.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @project.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

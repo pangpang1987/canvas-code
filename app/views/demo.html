@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<title>CoConceptualize - Social Concept Creating Tool</title>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css' />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" href="css/default.css" media="all" />
+</head>
+<body>
+<section id="login">
+	<div id="nav">
+		<div id="logo">
+			<a href="index.html">CoConceptualize</a>
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li class="sepa">·</li>
+			<li><a href="#about" onClick="smoothScroll('about','fast')">About</a></li>
+			<li class="sepa">·</li>
+			<li><a href="#contact" onClick="smoothScroll('contact','fast')">Contact</a></li>
+		</ul>
+	</div>
+	<div id="canvas">
+		<canvas id="viewport" width="800" height="600"></canvas>
+	</div>
+	<div id="node">
+		<p>Topic: <input type="text" id="topic"/></p>
+		<p>Detail: <input type="text" id="detail"/></p>
+		<p>User: <span id="user"> </span></p>
+	</div>
+</section>
+<div id="copyright-bar">
+	<span id="copyright-text"></span>
+	<img src="images/copyright.png" />
+</div>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/default.js"></script>
+<script src="js/demo.js"></script>
+<script src="lib/arbor.js"></script>
+<script src="lib/arbor-tween.js"></script>
+</body>
+</html>
