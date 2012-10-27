@@ -11,22 +11,31 @@
  *= require_self
  *= require_tree .
  */
+.left
+{ 
+	float:left;
+}
+.right
+{
+   float:left;
+   width:100px;
+height:100px;
 
-#update{
-  text-align: right;
 }
 
-#create{
-  text-align: right;
+#node{
+	text-align:left;
 }
 
 #canvas{
-  height 10%
-  float:left;
   background-color:#b0e0e6;
 }
 #node{
-	
-  right : 0px;
-  text-align: right;
+	margin-top:40px;
+    right : 0px;
 }
+
+#online_users{
+	float:right;
+}
+

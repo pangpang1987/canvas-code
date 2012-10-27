@@ -314,14 +314,12 @@ $.fn.serializeObject = function() {
 		});
 
 		$('#button_update').click(function() {
-				idea.update(1, $('#update').serializeObject());
+			idea.update(1, $('#update').serializeObject());
 		});
 
 		$('#button_create').click(function() {
-				idea.create($('#create').serializeObject());
+			idea.create($('#create').serializeObject());
 		});
-
-
 
 		$('#form_create').submit(function(e) {
 			e.preventDefault();
@@ -335,6 +333,14 @@ $.fn.serializeObject = function() {
 		socket.onopen = function() {
 			// Display "connected"
 			$('#status').text('Connected');
+			var msg = {
+				method : 'join',
+				user_id : 10, //$('#').val(),
+				user_name : 'Test User', //$('#').val(),
+				project_id : $('#new_node_pid').val()
+			}
+			socket.send(msg);
+
 		}
 
 		socket.onclose = function() {
@@ -356,7 +362,7 @@ $.fn.serializeObject = function() {
 					console.log("update");
 					break;
 				case "join":
-					$('#online_users').append( $('<li id="user_' + obj.user_id + '">' + obj.user_name + '</li>').hide().fadeIn(3000) )
+					$('#online_users').append($('<li id="user_' + obj.user_id + '">' + obj.user_name + '</li>').hide().fadeIn(3000))
 					break;
 				case "quit":
 					$('#online_users #user_' + obj.user_id).fadeOut(3000);

@@ -34,9 +34,9 @@ $.fn.serializeObject = function() {
 		var select_node = null;
 		var that = {
 
-			update_node : function(id, topic, detail) {
+			update_node : function(id, title, detail) {
 				var n = particleSystem.getNode(id);
-				n.data.topic = topic;
+				n.data.title = title;
 				n.data.detail = detail;
 			},
 			//
@@ -137,7 +137,7 @@ $.fn.serializeObject = function() {
 						ctx.textAlign = "center"
 						ctx.textBaseline = "middle"
 						ctx.fillStyle = "rgba(255,255,255,0.8)";
-						ctx.fillText(node.data.topic, pt.x, pt.y, radius * 1.4);
+						ctx.fillText(node.data.title, pt.x, pt.y, radius * 1.4);
 					}
 					ctx.closePath()
 
@@ -261,7 +261,7 @@ $.fn.serializeObject = function() {
 				$('#ancestor').val(node.data.id);
 				$('#new_node_uid').val(node.data.user);
 				$('#node_detail').val(node.data.detail);
-				$('#node_title').val(node.data.topic);
+				$('#node_title').val(node.data.title);
 			},
 
 			initMouseHandling : function() {
@@ -318,17 +318,11 @@ $.fn.serializeObject = function() {
 		});
 
 		$('#button_update').click(function() {
-			idea.update(1, $('#update').serializeObject());
+			idea.update($('#update').serializeObject());
 		});
 
 		$('#button_create').click(function() {
 			idea.create($('#create').serializeObject());
-		});
-
-		$('#form_create').submit(function(e) {
-			e.preventDefault();
-			idea.create($('#form_create').serializeObject());
-
 		});
 
 		var path = 'ws://' + window.location.hostname + ':8080';
@@ -337,6 +331,15 @@ $.fn.serializeObject = function() {
 		socket.onopen = function() {
 			// Display "connected"
 			$('#status').text('Connected');
+			var rnd = Math.floor((Math.random() * 100) + 1);
+			var msg = {
+				method : 'join',
+				user_id : rnd, //$('#').val(),
+				user_name : 'Test User ' + rnd, //$('#').val(),
+				project_id : $('#new_node_pid').val()
+			}
+			socket.send(JSON.stringify(msg));
+
 		}
 
 		socket.onclose = function() {
@@ -358,43 +361,42 @@ $.fn.serializeObject = function() {
 					console.log("update");
 					break;
 				case "join":
-					$('#online_users').append( $('<li id="user_' + obj.user_id + '">' + obj.user_name + '</li>').hide().fadeIn(3000) )
+					$('#online_users').append($('<li id="user_' + obj.user_id + '">' + obj.user_name + '</li>').hide().fadeIn(3000));
 					break;
 				case "quit":
 					$('#online_users #user_' + obj.user_id).fadeOut(3000);
+					break;
+				case "nameslist":
+					$.each(obj.data, function(data) {
+						$('#online_users').append($('<li id="user_' + this.user_id + '">' + this.user_name + '</li>').hide().fadeIn(3000));
+					});
 					break;
 			}
 		}
 		var idea = {
 
 			create : function(obj) {
+				console.log(obj);
 				obj.method = 'create';
 				socket.send(JSON.stringify(obj));
 			},
 
-			update : function(id, obj) {
-				socket.send({
-					method : 'update',
-					id : id,
-					data : obj
-				});
-			},
-
-			"delete" : function(id) {
-				socket.send({
-					method : 'delete',
-					id : id
-				});
+			update : function(obj) {
+				obj.method = 'update';
+				socket.send(JSON.stringify(obj));
 			}
 		}
 
-		function update_node(id, data) {
-			sys.renderer.update_node(id, data.title, data.detail);
+		function update_node(data) {
+
+			sys.renderer.update_node(data.id, data.title, data.detail);
 			sys.renderer.redraw();
 		};
-		function add_new_node(node_data) {
-			sys.addNode(new_id, node_data);
-			sys.addEdge(sys.getNode($('#idea_ancestor_n').val()), sys.getNode(new_id), {});
+		function add_new_node(node) {
+			console.log("check it:");
+			console.log(node);
+			sys.addNode(node.id, node);
+			sys.addEdge(sys.getNode(node.ancestor), sys.getNode(node.id), {});
 			sys.renderer.resizeNode();
 			sys.renderer.removeNode(sys.renderer.findRoot());
 			sys.renderer.select(sys.renderer.findRoot());

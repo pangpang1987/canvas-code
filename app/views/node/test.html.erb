@@ -22,32 +22,48 @@
 				</li>
 			</ul>
 		</div>
-		<div id="canvas">
+
+		<div class="left">
 			<canvas id="viewport" width="800" height="600"></canvas>
 		</div>
-		<div id="node">
-		<p>
-		<form id="update">
-			<input type="hidden" id="node_id" name="id" value = "<%= @n_id %>" />
-			<input type="text" id="node_title" name="title"  />
-			<input type="text" id="node_detail" name="detail"  />
-		</form>
-		<button id = "button_update">update</button>
-		</p>
-		
-		<p>
-		<form id="create">
-			<input type="hidden" id="new_node_pid" name="project_id" value="<%= params[:id]%>" />
-			uid:<input type="text" id="new_node_uid" name="user_id"  />
-			<input type="hidden" id="ancestor" name="ancestor"/>
-			
-			title:<input type="text" id="new_node_title" name="title"  />
-			detail:<input type="text" id="new_node_detail" name="detail"  />
-			
-		</form>
-		<button id = "button_update">update</button>
-		</p>
-		
+		<div id = "node" class = "right">
+			<form id="update">
+				<div>
+					Topic:
+					<input type="text" id="node_title" name="title"  />
+				</div>
+				<div>
+					Detail:
+					<input type="text" id="node_detail" name="detail"  />
+				</div>
+
+				<input type="hidden" id="node_id" name="id" value = "<%= @n_id %>" />
+
+			</form>
+			<button id = "button_update">
+				update
+			</button>
+
+			<form id="create">
+				<input type="hidden" id="new_node_pid" name="project_id" value="<%= params[:id]%>" />
+				uid:
+				<input type="text" id="new_node_uid" name="user_id"  />
+				u_name:
+				<input type="text" id="new_node_uid" name="user_name"  />
+				<input type="hidden" id="ancestor" name="ancestor"/>
+
+				title:
+				<input type="text" id="new_node_title" name="title"  />
+				detail:
+				<input type="text" id="new_node_detail" name="detail"  />
+
+			</form>
+			<button id = "button_create">
+				add
+			</button>
+
+			<p id="status"></p>
+			<ul id="online_users"></ul>
 		</div>
 	</section>
 	<div id="copyright-bar">
