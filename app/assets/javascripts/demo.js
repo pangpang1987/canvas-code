@@ -53,9 +53,12 @@ $.fn.serializeObject = function() {
 				particleSystem.screenSize(canvas.width, canvas.height)
 				particleSystem.screenPadding(60)// leave an extra 30px of whitespace per side
 
-				that.resizeNode();
-				that.removeNode(that.findRoot());
-				that.select(that.findRoot());
+				console.log("Most important root:" + that.findRoot().data.id + "\n");
+				if (that.findRoot() != null) {
+					that.resizeNode();
+					that.removeNode(that.findRoot());
+					that.select(that.findRoot());
+				}
 
 				$(window).resize(that.resize)
 				that.resize()
@@ -234,14 +237,15 @@ $.fn.serializeObject = function() {
 				}
 
 				//show the source
-				var root = that.findRoot()
-				var node = target
-				$('#node_nav').html(">>" + node.name)
-				while (node != root) {
-					node = p.getEdgesTo(node)[0].source
-					$('#node_nav').html(">>" + node.name + $('#node_nav').html())
-				}
-
+				/*
+				 var root = that.findRoot()
+				 var node = target
+				 $('#node_nav').html(">>" + node.name)
+				 while (node != root) {
+				 node = p.getEdgesTo(node)[0].source
+				 $('#node_nav').html(">>" + node.name + $('#node_nav').html())
+				 }
+				 */
 			},
 
 			select : function(node) {
@@ -253,11 +257,11 @@ $.fn.serializeObject = function() {
 			},
 
 			showDetail : function(node) {
-				$('#id').val(node.data.id);
-				$('#idea_ancestor_n').val(node.data.id);
-				$('#user').html(node.data.user);
-				$('#idea_detail').val(node.data.detail);
-				$('#idea_title').val(node.data.topic);
+				$('#node_id').val(node.data.id);
+				$('#ancestor').val(node.data.id);
+				$('#new_node_uid').val(node.data.user);
+				$('#node_detail').val(node.data.detail);
+				$('#node_title').val(node.data.topic);
 			},
 
 			initMouseHandling : function() {
@@ -293,7 +297,7 @@ $.fn.serializeObject = function() {
 	$(document).ready(function() {
 
 		var sys = arbor.ParticleSystem(2000, 400, 0.1, false, 60, 0.01)
-		sys.renderer = DeadSimpleRenderer("#viewport")
+
 		//"test.json"
 		//"http://localhost:3000/node/json/1.json"
 		var json_add = "http://localhost:3000/node/json/" + $('#new_node_pid').val() + ".json"
@@ -306,23 +310,21 @@ $.fn.serializeObject = function() {
 			document.title = "coconceptulize - " + data.title;
 
 		});
-		// display the name and handle clicks on the ‘see another’ link
+		sys.renderer = DeadSimpleRenderer("#viewport")
 
 		$("#loginButton").click(function() {
 			$("#loginButton").attr("onsubmit", false);
 			window.location.href = "index.html";
 		});
-		
+
 		$('#button_update').click(function() {
-				idea.update(1, $('#update').serializeObject());
+			idea.update(1, $('#update').serializeObject());
 		});
-		
+
 		$('#button_create').click(function() {
-				idea.create($('#create').serializeObject());
+			idea.create($('#create').serializeObject());
 		});
-		
-		
-		
+
 		$('#form_create').submit(function(e) {
 			e.preventDefault();
 			idea.create($('#form_create').serializeObject());

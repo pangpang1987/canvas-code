@@ -1,6 +1,5 @@
-// Place all the styles related to the node controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 html, body { 
   font-family: 'PT Sans', sans-serif;
@@ -19,7 +18,7 @@ section {
 
 #header {
   position: relative;
-  background: #6188ad url(../images/bgtop.gif) repeat;
+  background: #6188ad url(/images/bgtop.gif) repeat;
   text-align: center;
 }
 
@@ -30,6 +29,7 @@ section {
   height: 35px;
   font-size: 0.8em;
 }
+
 
 #nav #logo {
   background: #2c2c2c;
@@ -156,7 +156,7 @@ button#get-started:hover {
 
 #getin {
   position: relative;
-  background: #6188ad url(../images/bgsignup.jpg) repeat;
+  background: #6188ad url(/images/bgsignup.jpg) repeat;
   width: 100%;
   margin: 0 auto;
 }
@@ -303,12 +303,12 @@ button#get-started:hover {
 }
 
 #contact-form #sender_name {
-  background: #fff url(../images/contact-name.png) no-repeat scroll 7px 15px;
+  background: #fff url(/images/contact-name.png) no-repeat scroll 7px 15px;
   padding-left: 35px;
 }
 
 #contact-form #sender_email {
-  background: #fff url(../images/contact-email.png) no-repeat scroll 7px 15px;
+  background: #fff url(/images/contact-email.png) no-repeat scroll 7px 15px;
   padding-left: 35px;
 }
 
@@ -325,7 +325,7 @@ button#get-started:hover {
 }
 
 #contact-form #sender_message {
-  background: #fff url(../images/contact-message.png) no-repeat scroll 400px 70px;
+  background: #fff url(/images/contact-message.png) no-repeat scroll 400px 70px;
 }
 
 button#send-email {
@@ -388,13 +388,10 @@ button#send-email:hover {
 }
 
 #signup-box {
-  position: absolute;
+  margin: 0 auto;
   width: 421px;
   height: 569px;
-  top: 50%;
-  left: 50%;
-  margin-left: -210px; 
-  margin-top: -285px;
+  margin-top: 70px;
 }
 
 #signup-box .title {
@@ -402,6 +399,7 @@ button#send-email:hover {
   font-size: 4em;
   color: #d12c2c;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 #fields div div {
@@ -419,13 +417,15 @@ button#send-email:hover {
   padding: 7px;
   border: 1px solid #da2525;
   display: none;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 #signup-box input {
   width: 400px;
   height: 40px;
   margin-top: 20px;
-  background: #fff url(../images/sign-up-required.png) no-repeat scroll 7px 10px;
+  background: #fff url(/images/sign-up-required.png) no-repeat scroll 7px 10px;
   padding-left: 35px;
   border: 0;
 }
@@ -454,7 +454,7 @@ button#signup-button {
   text-shadow: 1.0px 1.0px #000;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 button#signup-button:hover {
@@ -474,48 +474,19 @@ button#signup-button:hover {
     inset 0px 0px 3px rgba(255,255,255,0);
 }
 
-button#learnmore-button {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.4em;
-  color: #ffffff;
-  padding: 8px 15px;
-  background: #048bc9;
-  background: -moz-linear-gradient(top, #00b4f5 0%, #048bc9);
-  background: -webkit-gradient(linear, left top, left bottom, from(#00b4f5), to(#048bc9));
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: 0;
-  -moz-box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
-  -webkit-box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
-  box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
-  text-shadow: 1.0px 1.0px #000;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-top: 20px;
+#signup-success {
+  margin-top: 30px;
 }
 
-button#learnmore-button:hover {
-  color: #bfd8f0;
-  background: #165585;
-  background: -moz-linear-gradient(top, #0071bd 0%, #165585);
-  background: -webkit-gradient(linear, left top, left bottom, from(#0071bd), to(#165585));
-  border: 0;
-  -moz-box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
-  -webkit-box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
-  box-shadow:
-    0px 2px 4px rgba(000,000,000,0.8),
-    inset 0px 0px 3px rgba(255,255,255,0);
+#signup-success p {
+  font-size: 1.3em;
+}
+
+#signup-success p b {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #90bd2f;
 }
 
 #login {
@@ -547,7 +518,7 @@ button#learnmore-button:hover {
   width: 400px;
   height: 60px;
   margin-top: 20px;
-  background: #fff url(../images/sign-up-required.png) no-repeat scroll 7px 20px;
+  background: #fff url(/images/sign-up-required.png) no-repeat scroll 7px 20px;
   padding-left: 35px;
   border: 0;
   font-size: 1.5em;
@@ -623,21 +594,21 @@ button#login-button:hover {
 }
 
 .section-nav .prev {
-  background-image: url(../images/prev.png);
+  background-image: url(/images/prev.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
   cursor: pointer;
 }
 
 .section-nav .next {
-  background: url(../images/next.png);
+  background: url(/images/next.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
   cursor: pointer;
 }
 
 .section-nav .top {
-  background: url(../images/top.png);
+  background: url(/images/top.png);
   background-repeat: no-repeat;
   text-indent: -9999px;
   cursor: pointer;
@@ -779,12 +750,12 @@ button#get-started {
 }
 
 #contact-form #sender_name {
-  background: #fff url(../images/contact-name.png) no-repeat scroll 7px 10px;
+  background: #fff url(/images/contact-name.png) no-repeat scroll 7px 10px;
   padding-left: 35px;
 }
 
 #contact-form #sender_email {
-  background: #fff url(../images/contact-email.png) no-repeat scroll 7px 10px;
+  background: #fff url(/images/contact-email.png) no-repeat scroll 7px 10px;
   padding-left: 35px;
 }
 
@@ -800,7 +771,26 @@ button#get-started {
 }
 
 #contact-form #sender_message {
-  background: #fff url(../images/contact-message-small.png) no-repeat scroll 290px 40px;
+  background: #fff url(/images/contact-message-small.png) no-repeat scroll 290px 40px;
+}
+
+#update{
+  text-align: right;
+}
+
+#create{
+  text-align: right;
+}
+
+#canvas{
+  position:absolute;
+  left : 0px;
+  background-color:#b0e0e6;
+}
+#node{
+  position:absolute;
+  right : 0px;
+  text-align: right;
 }
 
 button#send-email {
