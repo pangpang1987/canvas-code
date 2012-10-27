@@ -345,7 +345,7 @@ $.fn.serializeObject = function() {
 		}
 
 		socket.onmessage = function(msg) {
-			var obj = JSON.parse(msg.data.substring(10, msg.data.length));
+			var obj = JSON.parse(msg.data);
 			//console.log(obj);
 			console.log(msg);
 			switch (obj.method) {
@@ -357,9 +357,11 @@ $.fn.serializeObject = function() {
 					update_node(obj.id, obj.data);
 					console.log("update");
 					break;
-				case "delete":
-					//deleteItem(obj.id);
-					console.log("delete");
+				case "join":
+					$('#online_users').append( $('<li id="user_' + obj.user_id + '">' + obj.user_name + '</li>').hide().fadeIn(3000) )
+					break;
+				case "quit":
+					$('#online_users #user_' + obj.user_id).fadeOut(3000);
 					break;
 			}
 		}

@@ -28,7 +28,7 @@
 		<div id="node">
 		<p>
 		<form id="update">
-			<input type="text" id="node_id" name="id" value = "<%= @n_id %>" />
+			<input type="hidden" id="node_id" name="id" value = "<%= @n_id %>" />
 			<input type="text" id="node_title" name="title"  />
 			<input type="text" id="node_detail" name="detail"  />
 		</form>
@@ -37,9 +37,9 @@
 		
 		<p>
 		<form id="create">
-			project_id:<input type="text" id="new_node_pid" name="project_id" value="<%= params[:id]%>" />
-			user_id:<input type="text" id="new_node_uid" name="user_id"  />
-			ancestor:<input type="text" id="ancestor" name="ancestor"/>
+			<input type="hidden" id="new_node_pid" name="project_id" value="<%= params[:id]%>" />
+			uid:<input type="text" id="new_node_uid" name="user_id"  />
+			<input type="hidden" id="ancestor" name="ancestor"/>
 			
 			title:<input type="text" id="new_node_title" name="title"  />
 			detail:<input type="text" id="new_node_detail" name="detail"  />

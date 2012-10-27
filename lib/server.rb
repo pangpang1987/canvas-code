@@ -3,12 +3,17 @@ require "bundler"
 Bundler.setup
 require "em-websocket"
 require "json"
+require "sqlite3"
 
-# require "ruby-debug"
+
+
 
 class Client
   attr_accessor :websocket
   attr_accessor :name
+  attr_accessor :user_id
+  attr_accessor :project_id
+
 
   def initialize(websocket_arg)
     @websocket = websocket_arg
@@ -18,9 +23,11 @@ end
 class Project
 
   attr_accessor :clients
+  attr_accessor :db
 
   def initialize
     @clients = {}
+    @db = SQLite3::Database.open( "../db/development.sqlite3" )
   end
 
   def start(opts={})
@@ -37,41 +44,58 @@ class Project
     @clients[websocket] = client
   end
 
-  def remove_client(websocket)
-    client = @clients.delete(websocket)
+  def add_client_info(websocket, user_id, user_name, project_id)
+    @clients[websocket].user_id = user_id
+    @clients[websocket].project_id = project_id
+    msg = Hash.new
+    msg["method"] = "join"
+    msg["user_id"] = user_id
+    msg["user_name"] = user_name
+    outgoing = msg.to_json
+    send_all(websocket, "#{outgoing}")
   end
 
-  def send_all(message)
+  def remove_client(websocket)
+    msg = Hash.new
+    msg["method"] = "quit"
+    msg["user_id"] = @clients[websocket].user_id
+    outgoing = msg.to_json
+    @clients.delete(websocket)
+    send_all(websocket, "#{outgoing}")    
+  end
+
+  def send_all(orig_websocket, message)
+    project_id = @clients[orig_websocket]["project_id"]
     @clients.each do |websocket, client|
-      websocket.send message
+      if @clients[websocket]["project_id"] == project_id
+        websocket.send message
+      end
     end
   end
 
   def handle_message(websocket, message)
-      decoded = JSON.parse message
-      puts decoded.inspect
-      puts decoded["method"]
-      case decoded["method"]
+    decoded = JSON.parse message
+    puts decoded.inspect
+    puts decoded["method"]
+    case decoded["method"]
+      when 'join'
+        add_client_info(websocket, decoded['user_id'], decoded['user_name'], decoded['project_id'])
+
       when 'create'
-        newid = 1
+        @db.execute("INSERT INTO ideas (user_id, project_id, title, detail, ancestor) 
+            VALUES (?, ?, ?, ?, ?)", [decoded["user_id"], decoded["project_id"], decoded["title"], decoded["detail"], decoded["ancestor"]])
+        newid = db.last_insert_row_id
         if newid
           decoded["id"] = newid
           outgoing = decoded.to_json
-          send_all "#{@clients[websocket].name}: #{outgoing}"
-        end
-      when 'update'
-        #updated = update_in_database(decoded.id, decoded.data)
-        if updated
-          outgoing = decoded.to_json
-          send_all "#{@clients[websocket].name}: #{outgoing}"
+          send_all(websocket, "#{outgoing}")
         end
 
-      when 'delete'
-        #deleted = delete_from_database(decoded.id)
-        if deleted
-          outgoing = decoded.to_json
-          send_all "#{@clients[websocket].name}: #{outgoing}"
-      end
+      when 'update'
+        @db.execute("UPDATE ideas SET title = ?, detail = ? WHERE id = ?", 
+          [decoded["title"], decoded["detail"], decoded["id"]])
+        send_all(websocket, "#{decoded}")
+
     end
   end
 

@@ -71596,3 +71596,2720 @@ Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 1.5ms)
 
 Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:50:19 +0800 2012
 Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled home.css  (562ms)  (pid 27773)
+Compiled application.css  (2ms)  (pid 27773)
+Completed 200 OK in 595ms (Views: 590.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /home.css - 200 OK (4ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:53:59 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:54:00 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:54:00 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:54:00 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.1ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:54:00 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (49.6ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:54:00 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Connecting to database specified by database.yml
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 180ms (Views: 146.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /ideas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /projects.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /arbor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /default.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /demo.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /ideas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /node.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /projects.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /websocket.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:54:36 +0800 2012
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:54:37 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:54:37 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:54:37 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (12.6ms)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:54:37 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:54:37 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (11.0ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:55:50 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled home.css  (553ms)  (pid 28208)
+Compiled application.css  (3ms)  (pid 28208)
+Completed 200 OK in 584ms (Views: 581.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /application.css - 304 Not Modified (57ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:55:51 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:55:54 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:55:54 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:55:54 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.3ms)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:55:54 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:55:54 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (54.6ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:57:17 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled projects.css  (562ms)  (pid 28208)
+Compiled application.css  (2ms)  (pid 28208)
+Completed 200 OK in 639ms (Views: 635.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /projects.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:57:18 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:57:20 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.3ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:57:20 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:57:20 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (48.6ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:57:20 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.3ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:57:20 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (10.6ms)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.6ms)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:04 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (11.4ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:25 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (46.7ms)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (48.1ms)
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 13:58:36 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (10.6ms)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:08:31 +0800 2012
+Connecting to database specified by database.yml
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.9ms)
+Compiled demo.js  (0ms)  (pid 28305)
+Compiled application.js  (8ms)  (pid 28305)
+Completed 200 OK in 181ms (Views: 146.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /ideas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /projects.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /jquery.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /arbor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /default.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /demo.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /ideas.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /node.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /projects.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /websocket.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (57.5ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (11.6ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:08:32 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:11:43 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:11:45 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:11:46 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:11:46 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.2ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:11:46 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:11:46 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (10.1ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:12:12 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.4ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.7ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (50.1ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:12:13 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:09 +0800 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /demo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.7ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:16:23 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.6ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled application.css  (2ms)  (pid 28305)
+Completed 200 OK in 62ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:16 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:17 +0800 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:22:20 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:22:20 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:22:20 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:22:20 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.9ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:22:20 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (11.0ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:22:49 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled application.css  (2ms)  (pid 28305)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:49 +0800 2012
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:22:50 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (9.9ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Processing by NodeController#test as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  Rendered node/test.html.erb within layouts/application (0.1ms)
+Compiled application.css  (2ms)  (pid 28305)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /projects.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.css?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /ideas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor-tween.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /arbor-tween.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/arbor.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/default.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /default.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/demo.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /demo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ideas.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /ideas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.8.0.min.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /jquery-1.8.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/node.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /node.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/projects.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /projects.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/websocket.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /websocket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/images/copyright.png" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/copyright.png"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /arbor.js - 200 OK (0ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1')[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)[0m
+  Rendered node/index.json.erb (10.2ms)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/node/json/1.json" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Processing by NodeController#index as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1')
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 1)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 2)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 4)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 5)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 14)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 22)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 23)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 24)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 25)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 26)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 27)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 28)
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 29)[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas" WHERE (project_id = '1') AND (ancestor = 30)
+  Rendered node/index.json.erb (9.5ms)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/arbor.js" for 127.0.0.1 at Sat Oct 27 14:23:04 +0800 2012
+Served asset /arbor.js - 304 Not Modified (0ms)
